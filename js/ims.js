@@ -15,7 +15,7 @@ $(document).ready(function (){
 
 	$('body').html(cn);
 	hd = 'church web';
-	hd = '<img src="church-logo.png" alt "Church Logo" width="400" height="50%"/>'
+	hd = '<img src="image/church-logo.png" alt="Church Logo" style="width: 400px; height: 100px;"/>'
 	   
 	$('#header').html(hd);
 
@@ -26,7 +26,7 @@ $(document).ready(function (){
 	$('#nav').html(nv);
 
 	   
-	inJson = {"svc":"getJson.py", "pageid":pageId, "action":action}
+	inJson = {"svc":"ims.py", "pageid":pageId, "action":action}
 	setMainRow(inJson);
 
    
