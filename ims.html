@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=devise-width, initial-scale=1">
+<title> IMS For Volunteer's</title>
+<head>
+	<script src="/project-3/js/jquery.js"></script>
+	<script src="/project-3/js/libfuncs.js"></script>
+	<script src="/project-3/js/ims.js"></script>
+	<link rel="stylesheet" herf="/test/css/churchWebsite.css">
+
+</head>
+<body>
+
+</body>
+<footer>
+</footer>
+</html>
+
+
+
+<!--
+###################################
+def saveSurveyNew(myObj, recordKey1, recordKey2):
+ 
+	jsonDataBaseFile = open("/volunteerdb/newdatabase.json").read() # read the file  
+	jsonDBObj = json.loads(jsonDataBaseFile) # String to Object (deserialization)
+	if recordKey1 not in jsonDbObj: 
+		# if recordKey1[email] doesn't exist in our database then we have assign myObj a time stamp key [recordKey2] and assign that dictionary value to our higher recordKey1[email] key
+		jsonDbObj[recordKey1] = {recordKey2:myObj}
+	else: 
+		# if email already exist then just put the new data under the same email but with different timeStamp, which is the key for myObj 
+		jsonDbObj[recordKey1][recordKey2] = myObj
+
+	jsonDbObj[recordKey1][recordKey2] = myObj # ?? isn't this already happen on the else statment 
+	jsonText2 = json.dumps(jsonDbObj, indent=4) # Object to String (serialization)
+
+	FW=open(jsonFile, "w")
+	FW.write("%s" % (jsonText2))
+	FW.close()
+
+       
+	return ""
+-->
